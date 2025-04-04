@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Consistent text styles */
+h1 {
+  @apply text-4xl leading-tight tracking-tight;
+}
+
+h2 {
+  @apply text-3xl leading-tight tracking-tight;
+}
+
+h3 {
+  @apply text-xl leading-snug;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+/* Consistent spacing */
+.section-padding {
+  @apply py-8 md:py-12 lg:py-16;
+}
+
+.section-spacing {
+  @apply mb-8 md:mb-12 lg:mb-16;
+}
+
+.content-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Inner content areas */
+.content-inner {
+  @apply max-w-3xl mx-auto;
+}
+
+/* Responsive container for main content areas */
+.main-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Section spacing utilities */
+.section > * + * {
+  @apply mt-4 md:mt-6;
+}
